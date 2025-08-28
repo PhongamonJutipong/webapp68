@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Overlay</title>
+  <style>
+    .container {
+      position: relative;
+      width: 300px;
+    }
+
+    .container img {
+      width: 100%;
+      display: block;
+      border-radius: 5px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      background: rgba(0, 0, 0, 0.5);  
+      backdrop-filter: blur(6px);          
+      -webkit-backdrop-filter: blur(6px); 
+      color: #fff;
+      padding: 10px 120px;
+      font-size: 22px;
+      font-family: Arial, sans-serif;
+      border-radius: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Preview:</h3>
+  <div class="container">
+    <img src="pexels-pixabay-56866.jpg" alt="Flower">
+    <div class="overlay">Hello World</div>
+  </div>
+
+</body>
+</html>
